@@ -92,18 +92,12 @@ Issue: Unauthorized users could access certain endpoints.
 
 Solution: Implemented JWT authentication and protected routes using middleware.
 
-🔹 Challenge 2: Handling CORS Errors
-
-Issue: The frontend (Vercel) couldn't communicate with the backend (Render).
-
 Solution: Installed CORS middleware in the backend:
 
 npm install cors
 
 Updated server.js:
 
-const cors = require('cors');
-app.use(cors({ origin: "https://your-frontend.vercel.app" }));
 
 🔹 Challenge 3: Task Filtering & Pagination
 
